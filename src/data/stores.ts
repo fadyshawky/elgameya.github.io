@@ -14,8 +14,4 @@ export const stores: StoreItem[] = [
     img: "./Group 4670.png",
     link: "https://play.google.com/store/apps/details?id=com.gameya.elgameya&hl=en_US",
   },
-  {
-    img: "./Group 4682.png",
-    link: "",
-  },
 ];
