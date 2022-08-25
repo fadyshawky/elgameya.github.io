@@ -1,11 +1,12 @@
 import React from "react";
-
+import { useTranslation } from "react-i18next";
 export default function ELgameyaInfo() {
+  const { t: trans } = useTranslation();
   return (
     <div className="col-start-2 col-span-1 grid justify-items-center pt-0">
       <div className="rotate-6 w-14 lg:mt-0  lg:-mb-60 md:mt-20">
         <img src="./Group 4689.png" alt="image" className="" />
-        <p className="text-sm -ml-2"> Apartment</p>
+        <p className="text-sm -ml-2"> {trans("appartment")}</p>
       </div>
       <div className=""></div>
       <img
@@ -84,11 +85,11 @@ export default function ELgameyaInfo() {
       />
       <div className="lg:-mt-24 ml-80 mr-28 md:-mt-12 sm: -mt-12 ">
         <img src="./Path 6819.png" alt="image" className=" w-20 h-8" />
-        <p className="text-xs ml-1">New Car</p>
+        <p className="text-xs ml-1">{trans("cars")}</p>
       </div>
       <div className="lg:-mt-32 mr-80 -mt-12 mb-16 md:-mt-10">
         <img src="./path 6818.png" alt="image" className=" w-16 h-12" />
-        <p className="text-xs ml-1">Marriage</p>
+        <p className="text-xs ml-1">{trans("marriage")}</p>
       </div>
     </div>
   );

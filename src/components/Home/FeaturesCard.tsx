@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { features_1, features_2 } from "../../data/features";
+import { Features_1, Features_2 } from "../../data/features";
 
 export default function FeaturesCard() {
   const [image, setimage] = useState("./HOME.png");
@@ -8,7 +8,7 @@ export default function FeaturesCard() {
     <div>
       <div className="grid lg:grid-cols-3  md:grid-cols-1  col-row-3 px-32 pt-16 gap-x-8 ">
         <div className="col-start-1 pt-12">
-          {features_1.map((i) => (
+          {Features_1().map((i) => (
             <div
               className="flex mb-6   h-44 hover:shadow-2xl  hover:border-2 hover:rounded-3xl hover:rounded-tr-lg hover:border-black  "
               key={i.id}
@@ -28,7 +28,7 @@ export default function FeaturesCard() {
           <img src={image} alt="img" />
         </div>
         <div className="pt-12">
-          {features_2.map((i) => (
+          {Features_2().map((i) => (
             <div
               className="flex mb-2  h-44  hover:shadow-2xl  hover:border-2 hover:rounded-3xl hover:rounded-tr-lg hover:border-black "
               key={i.id}

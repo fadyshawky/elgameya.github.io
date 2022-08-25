@@ -1,6 +1,8 @@
 import React from "react";
+// import { useTranslation } from "react-i18next";
 
 export default function Footer() {
+  // const { t: trans } = useTranslation();
   return (
     <div className=" bg-black text-start px-28 " id="footer">
       <div className="  text-white pb-16 pt-16 lg:flex space-x-12 sm:grid-cols-1 sm: place-self-start  border-b-2  ">
@@ -21,7 +23,7 @@ export default function Footer() {
         </div>
 
         <div className=" ">
-          <button className="  py-2 px-6 rounded-full inline-flex space-x-6 text-white mb-10 border-2  ">
+          <button className="  py-2 px-6 rounded-full inline-flex space-x-6 text-white mb-10 border-2  w-44">
             <span className="">
               <img src="./facebook.png" alt="image" className="w-4 h-6" />
             </span>
@@ -29,7 +31,7 @@ export default function Footer() {
           </button>
         </div>
         <div className=" ">
-          <button className="  py-2 px-6 rounded-full inline-flex space-x-6 text-white mb-10 border-2  ">
+          <button className="  py-2 px-6 rounded-full inline-flex space-x-6 text-white mb-10 border-2  w-44">
             <span className="">
               <img src="./linkedn.png" alt="image" className="w-6 " />
             </span>
@@ -37,7 +39,7 @@ export default function Footer() {
           </button>
         </div>
 
-        <div className="">
+        <div className=" ">
           <input
             className="  py-2  pl-8  lg:pr-56 rounded-full inline-flex space-x-6 text-white bg-black mb-10 border-2"
             type={"email"}
@@ -45,8 +47,8 @@ export default function Footer() {
           ></input>
         </div>
         <div>
-          <button className="  py-2 px-10  rounded-full inline-flex space-x-6 text-black mb-10 border-2 bg-yellow-200   ">
-            <h4 className="">Subscribe</h4>
+          <button className="  py-2   rounded-full  content-center  text-black mb-10 border-2 bg-yellow-200  w-44  ">
+            <h4 className="">Subscribe </h4>
           </button>
         </div>
       </div>
