@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="  text-white pb-16 pt-16 lg:flex space-x-12 sm:grid-cols-1 sm: place-self-start  border-b-2  ">
         <div className="pr-24 sm: pb-8">
           <a
-            href="https://elgameya.net/"
+            href="Info@elgameya.net"
             target={"_blank"}
             rel="noreferrer"
             className="font-bold text-xl"
@@ -22,7 +22,10 @@ export default function Footer() {
           </p>
         </div>
 
-        <div className=" ">
+        <div
+          className=" "
+          onClick={() => window.open("https://www.facebook.com/ElGamaeya/")}
+        >
           <button className="  py-2 px-6 rounded-full inline-flex space-x-6 text-white mb-10 border-2  w-44">
             <span className="">
               <img src="./facebook.png" alt="image" className="w-4 h-6" />
@@ -30,7 +33,12 @@ export default function Footer() {
             <h4 className="">Facebook</h4>
           </button>
         </div>
-        <div className=" ">
+        <div
+          className=" "
+          onClick={() =>
+            window.open("https://www.linkedin.com/company/elgameya/mycompany/")
+          }
+        >
           <button className="  py-2 px-6 rounded-full inline-flex space-x-6 text-white mb-10 border-2  w-44">
             <span className="">
               <img src="./linkedn.png" alt="image" className="w-6 " />
@@ -39,18 +47,18 @@ export default function Footer() {
           </button>
         </div>
 
-        <div className=" ">
+        {/* <div className=" ">
           <input
             className="  py-2  pl-8  lg:pr-56 rounded-full inline-flex space-x-6 text-white bg-black mb-10 border-2"
             type={"email"}
             placeholder="Type your email"
           ></input>
-        </div>
-        <div>
+        </div> */}
+        {/* <div>
           <button className="  py-2   rounded-full  content-center  text-black mb-10 border-2 bg-yellow-200  w-44  ">
             <h4 className="">Subscribe </h4>
           </button>
-        </div>
+        </div> */}
       </div>
       <div className=" text-white pt-6 pb-6 lg:flex justify-between text-base sm:grid-cols-1">
         <h4>ElGameya</h4>

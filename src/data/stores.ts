@@ -5,15 +5,17 @@ export interface StoreItem {
 
 export const stores: StoreItem[] = [
   {
+    //apple store
     img: "./Group 4684.png",
-    link: "https://www.google.com/",
+    link: "https://apps.apple.com/us/app/elgameya/id1317606732",
   },
   {
+    // google play
     img: "./Group 4670.png",
-    link: "https://www.google.com/",
+    link: "https://play.google.com/store/apps/details?id=com.gameya.elgameya&hl=en_US",
   },
   {
     img: "./Group 4682.png",
-    link: "https://www.google.com/",
+    link: "",
   },
 ];
